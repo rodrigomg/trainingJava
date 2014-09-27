@@ -1,9 +1,9 @@
 .project
 .settings/
 api/.classpath
-api/.gitignore
 api/.project
 api/.settings/
+api/target/
 core/.classpath
 core/.gitignore
 core/.project
