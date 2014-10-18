@@ -1,5 +1,2 @@
-<html>
-<body>
+<meta name="decorator" content="template" />
 <h2>SPRING MVC WORKING!!!</h2>
-</body>
-</html>
