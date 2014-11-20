@@ -4,5 +4,6 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
 	<include file="migration/create_user.sql" />
+	<include file="migration/create_user_role.sql" />
 </databaseChangeLog>
 <!-- Archivo que nos indica los sql a ejecutar por liquibase -->
