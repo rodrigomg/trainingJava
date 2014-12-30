@@ -1,26 +1,21 @@
 <meta name="decorator" content="template" />
-<h2>SPRING MVC WORKING!!!</h2>
 <div class="container">
-
-	
 	<form method="POST"
                 action="${pageContext.request.contextPath}/j_spring_security_check"
                 id="sky-form"
                 class="form-signin" role="form">
-		<h2 class="form-signin-heading">Please sign in</h2>
-		<label for="inputEmail" class="sr-only">Email address</label> <input
+		<h1 class="form-signin-heading">Bienvenido</h1>
+		<label for="inputEmail" class="sr-only">Correo electronico</label> <input
 			type="email" id="inputEmail" class="form-control"
-			placeholder="Email address" required autofocus> <label
-			for="inputPassword" class="sr-only">Password</label> <input
+			placeholder="Correo electr&oacute;nico" required autofocus> <label
+			for="inputPassword" class="sr-only">Contrasena</label> <input
 			type="password" id="inputPassword" class="form-control"
-			placeholder="Password" required>
+			placeholder="Contrase&ntilde;a" required>
 		<div class="checkbox">
 			<label> <input type="checkbox" value="remember-me">
-				Remember me
+				Recordar mis datos
 			</label>
 		</div>
-		<button class="btn btn-lg btn-primary btn-block" type="submit">Sign
-			in</button>
+		<button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar sesi&oacute;n</button>
 	</form>
-
 </div>
