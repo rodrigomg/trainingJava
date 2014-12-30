@@ -18,3 +18,6 @@ web/.DS_Store
 web/target/
 *.DS_Store
 core/target/
+.metadata/
+Servers/
+web/.springBeans
