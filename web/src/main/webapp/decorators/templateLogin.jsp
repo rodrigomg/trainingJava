@@ -20,6 +20,15 @@
 
 <title>Training Java</title>
 <decorator:head />
+<style>
+.errorblock {
+  color: #ff0000;
+  background-color: #ffEEEE;
+  border: 3px solid #ff0000;
+  padding: 8px;
+  margin: 16px;
+}
+</style>
 </head>
 
 <body>
