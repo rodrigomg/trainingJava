@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/alta")
-public class altaController {
+public class AltaController {
 
   @RequestMapping("/inicio")
   public String inicio() {
