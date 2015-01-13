@@ -22,6 +22,9 @@ public class LoginController {
 	public String logout(){
 		return "login/login";
 	}
+	@Deprecated
+	public static final String SPRING_SECURITY_LAST_USERNAME_KEY =
+	           "SPRING_SECURITY_LAST_USERNAME";
 	
 	
 	
