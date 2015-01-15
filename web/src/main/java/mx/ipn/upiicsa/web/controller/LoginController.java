@@ -14,19 +14,13 @@ public class LoginController {
 		return "login/login";
 	}	
 	@RequestMapping("/loginfailed")
-	public String loginerror (Model model){
-		model.addAttribute("error", "true");
-		return "login/login";
+	public String loginerror (Model modelo){
+		modelo.addAttribute("error", "true");
+		return "login/loginfailed";
 	}
 	@RequestMapping("/logout")
 	public String logout(){
 		return "login/login";
-	}
-	@Deprecated
-	public static final String SPRING_SECURITY_LAST_USERNAME_KEY =
-	           "SPRING_SECURITY_LAST_USERNAME";
-	
-	
-	
+	}	
 
 }
