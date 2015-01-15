@@ -7,7 +7,7 @@
   <security:http auto-config="true" use-expressions="true">
     <security:intercept-url pattern="/inicio/**" access="isAuthenticated()" />
     <security:intercept-url pattern="/publico/**" access="permitAll" />
-    <security:form-login login-page="/login/login" default-target-url="/inicio/principal" authentication-failure-url="/login/loginfailed" authentication-failure-handler-ref="userNameCachingAuthenticationFailureHandler"/>
+    <security:form-login login-page="/login/login" default-target-url="/inicio/principal" authentication-failure-url="/login/loginfailed"/>
     <security:logout logout-success-url="/login/logout"/>
   </security:http>
   
@@ -31,9 +31,4 @@
         </property>
     </bean>
     
-    <bean 
-    id="userNameCachingAuthenticationFailureHandler"
-    class="so.UserNameCachingAuthenticationFailureHandler">
-    <property name="defaultFailureUrl" value="/url/to/login?error=true"/>
-</bean>
 </beans>
