@@ -1,5 +1,7 @@
 package mx.ipn.upiicsa.domains;
 
+import java.util.Date;
+
 public class User {
 	
 	private Long id;
@@ -9,17 +11,23 @@ public class User {
 	private String nombre;
 	private String apellidoPaterno;
 	private String apellidoMaterno;
-	private String fechaNacimiento;
-	private String dateCreated;
-	private String dateUpdated;
+	private Date fechaNacimiento;
+	private Date dateCreated;
+	private Date dateUpdated;
 	private String sexo;
 	private String telefono;
-
+	
 	public Long getId() {
 		return id;
 	}
 	public void setId(Long id) {
 		this.id = id;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
 	}
 	public String getPassword() {
 		return password;
@@ -51,22 +59,22 @@ public class User {
 	public void setApellidoMaterno(String apellidoMaterno) {
 		this.apellidoMaterno = apellidoMaterno;
 	}
-	public String getFechaNacimiento() {
+	public Date getFechaNacimiento() {
 		return fechaNacimiento;
 	}
-	public void setFechaNacimiento(String fechaNacimiento) {
+	public void setFechaNacimiento(Date fechaNacimiento) {
 		this.fechaNacimiento = fechaNacimiento;
 	}
-	public String getDateCreated() {
+	public Date getDateCreated() {
 		return dateCreated;
 	}
-	public void setDateCreated(String dateCreated) {
+	public void setDateCreated(Date dateCreated) {
 		this.dateCreated = dateCreated;
 	}
-	public String getDateUpdated() {
+	public Date getDateUpdated() {
 		return dateUpdated;
 	}
-	public void setDateUpdated(String dateUpdated) {
+	public void setDateUpdated(Date dateUpdated) {
 		this.dateUpdated = dateUpdated;
 	}
 	public String getSexo() {
@@ -81,9 +89,5 @@ public class User {
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
 	}
-	public String getUsername() {
-		return username;
-	}
-	
 
 }
