@@ -9,8 +9,6 @@
     http://www.springframework.org/schema/tx 
     http://www.springframework.org/schema/tx/spring-tx.xsd">
 
-	<tx:annotation-driven />
-
 	<context:component-scan base-package="mx.ipn.upiicsa.dao.impl.hibernate" />
 
 	<!-- Session Factory -->
