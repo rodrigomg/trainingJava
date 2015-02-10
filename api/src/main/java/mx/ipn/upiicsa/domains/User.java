@@ -13,7 +13,7 @@ public class User {
 	private String apellidoMaterno;
 	private Date fechaNacimiento;
 	private Date dateCreated;
-	private Date dateUpdated;
+	private Date lastUpdated;
 	private String sexo;
 	private String telefono;
 	
@@ -71,11 +71,11 @@ public class User {
 	public void setDateCreated(Date dateCreated) {
 		this.dateCreated = dateCreated;
 	}
-	public Date getDateUpdated() {
-		return dateUpdated;
+	public Date getLastUpdated() {
+		return lastUpdated;
 	}
-	public void setDateUpdated(Date dateUpdated) {
-		this.dateUpdated = dateUpdated;
+	public void setLastUpdated(Date lastUpdated) {
+		this.lastUpdated = lastUpdated;
 	}
 	public String getSexo() {
 		return sexo;

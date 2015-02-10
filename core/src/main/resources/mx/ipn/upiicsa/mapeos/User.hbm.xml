@@ -2,9 +2,9 @@
 <!DOCTYPE hibernate-mapping PUBLIC 
  "-//Hibernate/Hibernate Mapping DTD//EN"
  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<hibaerbate-mapping package="mx.ipn.upiicsa.domains">
+<hibernate-mapping package="mx.ipn.upiicsa.domains">
 	<class name="User" table="USER">
-		<id name="id" type="Long" column="ID">
+		<id name="id" column="ID">
 			<generator class="native" />
 		</id>
 		<property name="username" column="USERNAME" />
@@ -15,8 +15,8 @@
 		<property name="apellidoMaterno" column="APELLIDO_MATERNO" />
 		<property name="fechaNacimiento" column="FECHA_DE_NACIMIENTO" />
 		<property name="dateCreated" column="DATE_CREATED" />
-		<property name="dateUpdated" column="DATE_UPDATED" />
+		<property name="lastUpdated" column="LAST_UPDATED" />
 		<property name="sexo" column="SEXO" />
 		<property name="telefono" column="TELEFONO" />
 	</class>
-</hibaerbate-mapping>
+</hibernate-mapping>
