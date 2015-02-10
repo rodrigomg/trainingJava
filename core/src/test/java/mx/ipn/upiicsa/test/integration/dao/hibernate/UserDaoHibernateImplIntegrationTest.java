@@ -5,17 +5,15 @@ import static org.springframework.util.Assert.notNull;
 
 import java.util.Date;
 
-import javax.transaction.Transactional;
-
 import mx.ipn.upiicsa.dao.UsuarioDao;
 import mx.ipn.upiicsa.domains.User;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.transaction.annotation.Transactional;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration({"/DataSourceAppCtx.xml", "/HibernateAppCtx.xml"})
@@ -27,7 +25,6 @@ public class UserDaoHibernateImplIntegrationTest {
 	static User user = new User();
 	static Long id = 0L;
 	@Test
-	@Rollback (false)
 	public void prueba1Create(){
 		user.setUsername("niki_bonita@ebc.edu.mx");
 		user.setPassword("anniemama");
