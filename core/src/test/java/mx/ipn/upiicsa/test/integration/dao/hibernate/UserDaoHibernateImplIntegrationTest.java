@@ -9,8 +9,10 @@ import java.util.List;
 import mx.ipn.upiicsa.dao.UsuarioDao;
 import mx.ipn.upiicsa.domains.User;
 
+import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.junit.runners.MethodSorters;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.ContextConfiguration;
@@ -18,6 +20,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
 @RunWith(SpringJUnit4ClassRunner.class)
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
 @ContextConfiguration({"/DataSourceAppCtx.xml", "/HibernateAppCtx.xml"})
 @Transactional
 public class UserDaoHibernateImplIntegrationTest {
