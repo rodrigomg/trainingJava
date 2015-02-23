@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="mx.ipn.upiicsa.domains">
+	<class name="UserRole" table="USER_ROLE">
+		<id name="id" column="ID">
+			<generator class="native" />
+		</id>
+		<property name="userId" column="USER_ID" />
+		<property name="role" column="ROLE" />
+	</class>
+</hibernate-mapping>
