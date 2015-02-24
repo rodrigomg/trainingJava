@@ -29,8 +29,9 @@ public class UserRoleDaoHibernateImplIntegrationTest {
 	static UserRole userRole = new UserRole();
 	static Long id_Role = 0L;
 	@Test
-	@Rollback(false)
+	//@Rollback(false)
 	public void prueba1Create(){
+		userRole.setUserId(1L);
 		userRole.setRole("ROLE_USER");
 		userRoleDao.create(userRole);
 		id_Role= userRole.getId();
