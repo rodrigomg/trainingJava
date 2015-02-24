@@ -3,12 +3,9 @@ package mx.ipn.upiicsa.test.integration.dao.hibernate;
 import static org.springframework.util.Assert.isTrue;
 import static org.springframework.util.Assert.notNull;
 
-import java.util.Date;
 import java.util.List;
 
 import mx.ipn.upiicsa.dao.UserRoleDao;
-import mx.ipn.upiicsa.dao.UsuarioDao;
-import mx.ipn.upiicsa.domains.User;
 import mx.ipn.upiicsa.domains.UserRole;
 
 import org.junit.FixMethodOrder;
@@ -34,7 +31,7 @@ public class UserRoleDaoHibernateImplIntegrationTest {
 	@Test
 	@Rollback(false)
 	public void prueba1Create(){
-		userRole.setId(userRoleDao.read(userRole.getId()));
+		userRole.setRole("ROLE_USER");
 		userRoleDao.create(userRole);
 		id_Role= userRole.getId();
 		isTrue(id_Role>0);
@@ -66,10 +63,10 @@ public class UserRoleDaoHibernateImplIntegrationTest {
 	@Test
 	@Rollback(false)
 	public void prueba5Update(){
-		userRole.setRole();
+		userRole.setRole("ROLE_USER");
 		userRoleDao.update(userRole);
 		notNull(userRole);
-		System.out.print("UPDTAE: " + userRole.getEnabled());
+		System.out.print("UPDATE: " + userRole.getId());
 	}
 	@Test
 	@Rollback(false)
