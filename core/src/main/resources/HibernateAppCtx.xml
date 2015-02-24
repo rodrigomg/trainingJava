@@ -17,6 +17,7 @@
 		<property name="mappingResources">
 			<list>
 				<value>mx/ipn/upiicsa/mapeos/User.hbm.xml</value>
+				<value>mx/ipn/upiicsa/mapeos/UserRole.hbm.xml</value>
 			</list>
 		</property>
 
